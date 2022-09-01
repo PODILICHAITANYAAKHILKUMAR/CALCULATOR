@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="calc.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <strong">CALCULATOR</strong> 
+    </div>
+    <div class="calci">
+        <div class="screen">
+            <div id ="scr">
+
+            </div>
+            <button onclick = "clearScreen()" class="clear num">
+               <h3>Clear</h3>
+            </button>
+
+        </div>
+        <div class="numbers">
+            <div class="firstcol">
+                <button class="number1 num" onclick="display('1')">
+                    <h3>1</h3>
+                </button>
+                <button class="number4 num" onclick="display('4')">
+                    <h3>4</h3>
+                </button>
+                <button class="number7 num" onclick="display('7')">
+                    <h3>7</h3>
+                </button>
+                <button class="number0 num" onclick="display('0')">
+                    <h3>0</h3>
+                </button>
+            </div>
+            <div class="secondcol">
+                <button class="number2 num" onclick="display('2')">
+                    <h3>2</h3>
+                </button>
+                <button class="number5 num" onclick="display('5')">
+                    <h3>5</h3>
+                </button>
+                <button class="number8 num" onclick="display('8')">
+                    <h3>8</h3>
+                </button>
+                <button class="number00 num" onclick="display('00')">
+                    <h3>00</h3>
+                </button>
+            </div>
+            <div class="thirdcol">
+                <button class="number3 num" onclick="display('3')">
+                    <h3>3</h3>
+                </button>
+                <button class="number6 num" onclick="display('6')">
+                    <h3>6</h3>
+                </button>
+                <button class="number9 num" onclick="display('9')">
+                    <h3>9</h3>
+                </button>
+                <button class="point num" onclick="display('.')">
+                    <h3>.</h3>
+                </button>
+            </div>
+            <div class="fourthcol">
+                <button class="op1 num" onclick="display('+')">
+                    <h3>+</h3>
+                </button>
+                <button class="op2 num" onclick="display('-')">
+                    <h3>-</h3>
+                </button>
+                <button class="op3 num" onclick="display('*')">
+                    <h3>*</h3>
+                </button>
+                <button class="op4 num" onclick="display('/')">
+                    <h3>/</h3>
+                </button>
+            </div>
+            <div class="fourthrow" >
+                <button class="num" id="equalto" onclick="result()">
+                    <h3>=</h3>
+                </button>
+                <button id="backspace" class="back num" onclick="del()">
+                    <h3>backspace</h3>
+                </button>
+              
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+</html>

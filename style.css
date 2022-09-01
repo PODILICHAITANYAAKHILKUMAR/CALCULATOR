@@ -1,0 +1,133 @@
+body{
+    background-image: url("image.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background:#000;
+    background-position: center !important;
+
+}
+.calci{
+
+    display: flex;
+    box-sizing: border-box;
+    width : 500px;
+    height : 500px;
+    border : 3px solid white;
+    margin : 30px auto;
+    flex-direction: column;
+    border-radius: 10px;
+    background:#4caf50;
+    
+
+}
+
+.heading{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #000;
+    color:dodgerblue;
+
+}
+.screen{
+    display: flex;
+}
+#scr{
+    border : 1px solid black;
+    margin : 5px auto;
+    height : 70px;
+    width : 350px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    background-color: rgba(36, 69, 54, 0.8);
+    border: 1px solid white;
+    color : aliceblue;
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+    overflow : hidden;
+    box-shadow: 2px 2px 5px white;
+
+
+}
+
+
+
+.clear{
+    flex-wrap: wrap;
+    border: 3px solid #fff;
+    margin : 10px auto;
+    border-radius: 20px;
+    transition:all .3s ease;
+    text-align: center;
+    color:#fff;
+    width : 90px;
+
+}
+.numbers{
+    margin : 5px 25px;
+    height : 400px;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    
+}
+.firstcol,.secondcol,.thirdcol,.fourthcol{
+    height : 300px;
+    margin: 5px 10px;
+    width : 85px;
+    text-align: center;
+    flex-direction: row;
+    border-radius: 10px;
+    
+    
+   
+}
+.fourthrow{
+    flex-direction: column;
+    flex-wrap: wrap;    
+    margin: 5px 10px;
+    width : 450px;
+  
+}
+#equalto,#backspace{
+    width : 200px;
+    border-radius: 20px;
+    background:#000;
+    color:#fff;
+    transition:all .3s ease;
+    border: 3px solid white;
+    margin: 0 5px;
+}
+.num{
+    background:#000;
+    transition:all .3s ease;
+}
+:is(#equalto,#backspace,.num,.op1,.op2,.op3,.op4,.clear):hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    border: 3px solid #000;
+
+}
+.point,.number7,.number4,.number1,.number0,.number00,.number2,.number3,.number5,.number6,.number8,.number9{
+    
+    margin : 10px 20px;
+    border-radius: 20px;
+    width : 75px;
+    height: auto;
+    color: white;
+    border: 2px solid white;
+
+}
+.op1,.op2,.op3,.op4{
+    background:#000;
+    color:#fff;
+    border: 2px solid white;
+    margin : 10px 50px;
+    border-radius: 20px;
+    transition:all .3s ease;
+    width : 75px;
+    height: auto;
+}
